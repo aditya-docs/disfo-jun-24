@@ -1,0 +1,17 @@
+POST http://localhost:8082/auth/signup
+Content-Type: application/json
+
+{
+    "username": "darthvader",
+    "email": "sithlord@empire.com",
+    "password": "iamyourfatherluke123"
+}
+
+###
+POST http://localhost:8082/auth/login
+Content-Type: application/json
+
+{
+    "username": "darthvader",
+    "password": "iamyourfatherluke123"
+}
