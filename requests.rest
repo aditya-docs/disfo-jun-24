@@ -15,3 +15,7 @@ Content-Type: application/json
     "username": "darthvader",
     "password": "iamyourfatherluke123"
 }
+
+###
+GET http://localhost:8082/user/darthvader
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2Njc0NjM5ODVmYTFkZmNkYTc2NmFkNTMiLCJpYXQiOjE3MTkyNTAyNDMsImV4cCI6MTcxOTI1MDMwM30.Cis-EkshqZ2_XgAXoOKa93u6R0RrJ7306YScyv74Gw0

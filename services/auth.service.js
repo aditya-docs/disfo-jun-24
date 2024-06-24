@@ -25,7 +25,9 @@ class AuthService {
   });
 
   generateToken = async (payload) =>
-    jwt.sign(payload, process.env.JWT_SECRET_KEY);
+    jwt.sign(payload, process.env.JWT_SECRET_KEY, { expiresIn: "1m" });
+
+  verifyToken = async (token) => jwt.verify(token, process.env.JWT_SECRET_KEY);
 }
 
 module.exports = AuthService;
